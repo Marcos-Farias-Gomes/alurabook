@@ -1,0 +1,32 @@
+.topicos{
+    background: var(--azul);
+    text-align: center;
+}
+
+.topicos h2{
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 1.5em 0.5em;
+}
+
+.topicos ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos li{
+    margin: 1.5em 0.5em;
+}
+
+.topicos a{
+    color: white;
+    text-decoration: none;
+    background-color: var(--laranja);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.3em;
+}
