@@ -3,3 +3,52 @@
     margin: 1em;
     color: black;
 }
+.lista_footer{
+    display: none;
+}
+footer h2{
+    display: none;
+}
+@media screen and (min-width: 1024px){
+    .texto_final{
+        display: none;
+    }
+    footer h2{
+        display: block;
+        font-size: 24px;
+        color: black;
+        font-weight: 400;
+        margin: 2em 1em;
+    }
+    .lista_footer{
+        display: block;
+        list-style: none;
+        margin: 2em auto;
+    }
+    footer{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+    .lista_footer a{
+        text-decoration: none;
+        color: #474646;
+        margin: 0.5em;
+    }
+    .lista_footer li{ 
+        display: flex;
+        align-items: center;
+        margin: 1em;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .lista_footer{
+        border-left: 1px solid #474646;
+        padding-left: 2em;
+    }
+    .footer{
+        padding: 3em 0;
+    }
+}

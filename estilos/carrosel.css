@@ -4,7 +4,7 @@ h2.titulo_carrosel{
     font-family: var(--fonte-principal);
     text-transform: uppercase;
     font-size: 18px;
-    font-weight: 700px;
+    font-weight: 700;
     padding: 15px;
     background-color: white;
 }
@@ -34,10 +34,6 @@ h2.titulo_carrosel{
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5em;
-}
-
-.card_descrição img{
-    padding: 1em;
 }
 
 .card_descrição h3{
@@ -75,3 +71,50 @@ h2.titulo_carrosel{
     font-family: var(--fonte-principal);
     font-weight: 700;
 }
+@media screen and (min-width: 1024px) {
+    h2.titulo_carrosel{
+        font-size: 26px;
+    }
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+    .swiper{
+        width: 50%;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: 60%;
+    }
+    .card{
+        width: 40%;
+        margin: 2.5em auto;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    h2.titulo_carrosel{
+        font-size: 32px;
+    }
+    .card_carrossel{
+        display: flex;
+       align-items: center;
+       margin: 0 20vw 3em 20vw;
+    }
+    .card_descrição h3{
+        font-size: 25px;
+        padding: 0px ;
+        margin: 0px;
+    }
+    h2.titulo_carrosel{
+        font-size: 18px;
+    }
+
+    .swiper{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+        margin: 4em 0 0 4em;
+    }
+    }
