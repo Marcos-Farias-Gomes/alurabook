@@ -14,7 +14,7 @@
     --azul: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte-principal: "Poppins";
     --azul-solido:  #002F52;
-
+    --fonte-header: "Josefin Sans"
 }
 
 body{
@@ -60,6 +60,12 @@ span.cabeçalho_menu-hambúrguer{
     display: block;
 }
 
+.container_botao:checked~.container_rotulo>.cabeçalho_menu-hambúrguer{
+    background: url("img/Menu\ Aberto.svg");
+    background-repeat: no-repeat;
+    background-position: center     ;
+    background-color: var(--azul-solido);
+}
 .container_botao{
     display: none;
 }
@@ -80,4 +86,100 @@ span.cabeçalho_menu-hambúrguer{
     background-clip: text;
     text-transform: uppercase;
     text-decoration: none; 
+}
+.container_titulo{
+    display: none;
+}
+.lista_tablet{
+    display: none;
+}
+.container a p{
+    display: none;
+}
+.favoritos{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .contaner_titulo, b{
+        font-family: var(--fonte-header);
+        font-size: 30px;
+    }
+    b{
+        font-weight: 700;
+    }
+
+    .container_titulo{
+        font-weight: 400;
+        display: block;
+    }
+
+    .favoritos{
+        display: none;
+    }
+
+    .lista_header a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .lista_tablet{
+        list-style: none;
+        display: flex;
+    }
+
+    .lista_header{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    span.cabeçalho_menu-hambúrguer{
+        display: none;
+    }
+
+    .opções_botão{
+        display: none;
+    }
+    
+    .opções_botão:checked~.opções_categorias>.lista_header{
+        background-color: var(--azul-solido);
+        color: white; 
+        padding: 2em 1em;      
+    }
+
+    .lista-menu{
+        list-style: none;
+    }
+    .container a p{
+        display: none;
+    }
+    .opções_botão:checked ~.lista-menu{
+        display: block;
+        width: auto;
+    }
+    .lista-menu-item:hover{
+        background: var(--azul);
+    }
+    .lista-menu-item:hover>.lista-menu_link{
+        -webkit-text-fill-color: white;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .container a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        display: flex;
+        align-items: center;
+    }
+    .container a p{
+        display: block;
+    }
+    .container{
+        margin-right: 2em;
+    }
+    .lista_tablet{
+        margin-right: auto;
+    }
 }
